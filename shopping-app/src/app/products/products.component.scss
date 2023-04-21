@@ -1,4 +1,25 @@
-img {
-    height: 300px;
-    width: 300px;
+#img2{
+    //float:none;
+    width:  200px;
+    height: 200px;
+    object-fit:fill;
 }
+
+.container{
+   padding-top: 3%;
+   padding-bottom: 3%;
+}
+
+.card {
+    height: calc(100% - 20px); 
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
