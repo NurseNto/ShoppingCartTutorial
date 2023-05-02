@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../products.service';
+import { CartService } from '../cart.service';
+import { Product } from '../product';
 
 @Component({
   selector: 'app-products',
@@ -10,7 +12,7 @@ export class ProductsComponent implements OnInit {
 
   products : any;
 
-  constructor(private productService: ProductsService) {} // inject a service here
+  constructor(private productService: ProductsService, private cart:CartService) {} // inject a service here
 
   ngOnInit() {
     // this.productService.getProducts()
@@ -18,16 +20,24 @@ export class ProductsComponent implements OnInit {
     //   console.log(this.Products);
     // });
     this.getProducts();
-   
-    
   }
 
   getProducts() {
     this.productService.getProducts()
     .subscribe(res=>{this.products=res;
-    console.log(this.products)
+    // console.log(this.products)
   });
     
   }
+
+  add(product: Product) {
+      this.cart.addToCart(product);
+      window.alert('Your product has been added to the cart!');
+      console.log(product);
+      
+  }
+
+
+
 
 }

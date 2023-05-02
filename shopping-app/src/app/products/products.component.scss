@@ -1,8 +1,9 @@
 
-// .container{
-//    padding-top: 3%;
-//    padding-bottom: 3%;
-// }
+.container{
+   padding-top: 3%;
+   padding-bottom: 3%;
+   display: flex;
+}
 
 .card {
     height: calc(100% - 20px); 

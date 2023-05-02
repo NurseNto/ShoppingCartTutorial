@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { ProductsService } from '../products.service';
+import { NgIf } from '@angular/common';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -6,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent {
+  
+  constructor(private cartSrv: CartService) {}
+  items = this.cartSrv.getItems();
 
+  
+  
 }
