@@ -9,10 +9,6 @@ export class CartService {
   prod: Product[] = [];
   constructor(private products: ProductsService) { }
 
-  // addToCart(){
-  //   this.products.addProducts(this.prods)
-  // }
-
   addToCart(item: Product ) {
     this.prod.push(item)
     console.log(item);
@@ -27,5 +23,9 @@ export class CartService {
   clearCart() {
     this.prod = [];
     return this.prod;
+  }
+
+  deleteItem(id: number) {
+    this.prod.splice(id,1);
   }
 }

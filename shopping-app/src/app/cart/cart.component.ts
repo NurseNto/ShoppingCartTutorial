@@ -13,6 +13,7 @@ export class CartComponent {
   constructor(private cartSrv: CartService) {}
   items = this.cartSrv.getItems();
 
-  
-  
+  deleteOne(id:number) {
+    this.cartSrv.deleteItem(id);
+  }
 }
