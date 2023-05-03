@@ -1,9 +1,9 @@
 
 <div *ngIf="items.length != 0">
   <h3>Cart</h3>
-<ul>
+
 <div class="carts" *ngFor="let item of items; let i = index">
-  
+
   <div class="container">
 
   <div class="card" style="width: 18rem;">
@@ -20,17 +20,19 @@
       
     </div>
   </div>
-  
 </div>
 
 </div>
 
-</ul>
-
 </div>
 
 
-<a href="#" class="btn btn-primary" id="button2">Continue Shopping</a>
+
+<ng-container>
+<div *ngIf="items.length == 0">
+  <a href="#" class="btn btn-primary" id="button2">Continue Shopping</a>
+</div>
+</ng-container>
 
 
 
