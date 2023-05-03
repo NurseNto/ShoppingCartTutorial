@@ -1,11 +1,11 @@
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
+  <div class="container text-center" id="cont">
+    
 
         <!-- <ul class="products"> -->
           <li *ngFor="let prod of products ">
-
+            <div class="row row-cols-4">
+              <div class="col">
             <div class="card" style="width: 18rem;">
               <img src={{prod.image}} width="80" height="267" class="card-img-top" alt="...">
               <div class="card-body">
@@ -14,11 +14,13 @@
                 <a href="#" class="btn btn-primary" id="button1" (click)="add(prod)">Add to Cart</a>
               </div>
             </div>
-            
+
+          </div>
+        </div>
+
           </li>
         <!-- </ul> -->
 
-      </div>
-    </div>
+      
   </div>
   

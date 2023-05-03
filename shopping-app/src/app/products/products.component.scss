@@ -2,7 +2,8 @@
 .container{
    padding-top: 3%;
    padding-bottom: 3%;
-   display: flex;
+   
+   
 }
 
 .card {
@@ -10,6 +11,10 @@
     margin-bottom: 30px;
 }
 
+#cont {
+    display: flex;
+    gap: 5;
+}
 
 
 
