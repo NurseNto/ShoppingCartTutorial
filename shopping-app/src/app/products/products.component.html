@@ -1,26 +1,21 @@
 
-  <div class="container text-center" id="cont">
+  <div class="container text-center">
     
-
-        <!-- <ul class="products"> -->
-          <li *ngFor="let prod of products ">
-            <div class="row row-cols-4">
-              <div class="col">
+            <div class="row">
+              <div class="col col-4" *ngFor="let prod of products ">
+                <div class="card-al">
             <div class="card" style="width: 18rem;">
-              <img src={{prod.image}} width="80" height="267" class="card-img-top" alt="...">
+              <img src={{prod.image}}  class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">{{prod.title}}</h5>
-                <p class="card-text">R{{prod.price}}</p>
+                <h5 class="card-title" style="white-space:nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100ch">{{prod.title}}</h5>
+                <h5 class="card-title">R{{prod.price}}</h5>
                 <a href="#" class="btn btn-primary" id="button1" (click)="add(prod)">Add to Cart</a>
               </div>
             </div>
-
+          </div>
           </div>
         </div>
 
-          </li>
-        <!-- </ul> -->
-
-      
+          
   </div>
   

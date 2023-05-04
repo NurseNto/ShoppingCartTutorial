@@ -1,10 +1,16 @@
 
-.navbar-brand {
-    color: rgb(9, 1, 1);
+.navbar {
+    background-color: rgb(64, 59, 70);
+    padding: 20px;
 }
 
-.bt1{
-    padding: 0;
-    border: none;
-    background: none;
+.navbar-name{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 200;
+}
+
+.goToBtn{
+    border: 0;
+    background-color: rgb(96, 191, 210);
 }
